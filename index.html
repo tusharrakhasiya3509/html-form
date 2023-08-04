@@ -4,33 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <title>login form</title>
+    <title>Login form</title>
 </head>
+
+<style>
+    .division{
+        display: flex;
+        margin-left: 50px ;
+    }
+    /* .input-box{
+        margin: 0px 20px;
+        
+    } */
+    /* .input-box{
+        margin-left:120px ;
+    } */
+    .mydate{
+        margin-left:90px ;
+    }
+    .input-box{
+        margin-left:110px ;
+    }
+    /* .division-1{
+        margin-left: 120px;
+    } */
+    .check{
+        margin-left: 25px;
+    }
+    select{
+        margin-left: 20px;
+    }
+    textarea{
+        margin-left:80px ;
+    }
+    .division-2{
+        margin-left: 95px;
+    }
+    .btn{
+        margin-left: 50px;
+    }
+    #lab{
+        float: right;
+    }
+</style>
 
 <body>
 <form>
-    <div>
+    <div class="division">
         <label for="myname">Name:</label>
-        <input type="text" name="myname">
+        <div class="input-box"><input type="text" placeholder="First Name" name="myname" ></div>
     </div>
     <br>
-    <div>
+    <div class="division">
         <label for="mybdate">Borndate:</label>
-        <input type="date" name="mybdate">
+        <input type="date" class="mydate"  name="mybdate">
     </div>
     <br>
-    <div>
-        Gender : Male <input type="radio" name="Gender" > 
-                 feMale <input type="radio" name="Gender"> 
-                 other <input type="radio" name="Gender">
+    <div class="division">
+        Gender :<label for="male" class="division-2"> Male</label> 
+                <input type="radio" class="division-1" name="Gender" >
+                 FeMale <input type="radio" class="division-1" name="Gender">
+                 Other <input type="radio" class="division-1" name="Gender">
     </div>
     <br>
-    <div>
+    <div class="division">
         <label for="text"> About You :</label>
-        <textarea name="text" id="" cols="30" rows="10"></textarea>
+        <textarea name="text" id="" placeholder="write hear" cols="30" rows="10"></textarea>
     </div>
     <br>
-    <div>
+    <div class="division">
         <label for="Education">Choose a Education:</label>
         <select id="Educations" name="Education" >
         <option value="Graduate">Graduate</option>
@@ -38,21 +80,18 @@
         </select>
 
     </div>
-    <div>
+    <br>
+    <div class="check">
         <div class="form-check">
-          <input class="yes" type="checkbox" value="age" id="">
-          <label class="yes" for="">
-            your age above 18
-          </label>
+          <input class="yes" type="checkbox" value="age" id=""> &nbsp;your age above 18
         </div>
-  
-        
-    </div>
+     </div>
+     <br>
     <div>
-        <input type="submit" class="btn btn-danger">
+        <input type="submit" class="btn btn-danger" >
         <input type="reset" class="btn btn-outline-danger">
     </div>
-    <br>
+    
 
     
 </form>
